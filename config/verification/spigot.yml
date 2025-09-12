@@ -1,0 +1,5 @@
+spigot:
+  spigot:
+    base: "https://api.spigotmc.org/simple/0.2/index.php?action="
+  spiget:
+    base: "https://api.spiget.org/v2"

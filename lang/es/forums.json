@@ -1,0 +1,12 @@
+{
+  "forums.support.priority_tag.error": "No se pudo establecer la etiqueta de prioridad. Asegúrate de estar en un hilo de soporte y de tener el rol de comprador requerido.",
+  "forums.support.priority_tag.error_not_thread": "Este comando debe usarse dentro de un hilo de soporte.",
+  "forums.support.priority_tag.error_wrong_channel": "Este hilo no pertenece al foro de soporte configurado.",
+  "forums.support.priority_tag.error_buyer_role_missing": "El rol de comprador no está configurado o no se encontró en este servidor.",
+  "forums.support.priority_tag.error_not_buyer": "No tienes el rol de comprador requerido para establecer la etiqueta de prioridad.",
+  "forums.support.priority_tag.error_not_owner": "Solo el propietario del hilo puede establecer la etiqueta de prioridad.",
+  "forums.support.priority_tag.error_tag_not_found": "La etiqueta de prioridad no está disponible en este foro.",
+  "forums.support.priority_tag.error_already_tagged": "Este hilo ya tiene la etiqueta de prioridad.",
+  "forums.support.priority_tag.error_apply_failed": "No se pudo aplicar la etiqueta de prioridad. Inténtalo de nuevo más tarde.",
+  "forums.support.priority_tag.success": "Etiqueta de prioridad aplicada correctamente."
+}

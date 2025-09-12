@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    image: techmc-discord-bot:latest
+    container_name: techmc-discord-bot
+    restart: unless-stopped
+    env_file:
+      - .env

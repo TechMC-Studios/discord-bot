@@ -1,0 +1,13 @@
+{
+  "health.ok": "ok",
+  "ping.response": "Pong! 🏓 {ms} ms",
+  "stats.title": "Bot Statistics",
+  "stats.latency": "Latency",
+  "stats.uptime": "Uptime",
+  "stats.guilds": "Guilds",
+  "stats.users": "Users (approx)",
+  "stats.process_rss": "Process RSS",
+  "stats.load_avg": "Load Avg",
+  "stats.python": "Python",
+  "stats.requested_by": "Requested by {user}"
+}

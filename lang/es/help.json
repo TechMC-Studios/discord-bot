@@ -1,0 +1,11 @@
+{
+  "help.title": "Ayuda del Bot TechMC",
+  "help.description": "Aquí tienes todos los comandos disponibles:",
+  "help.uncategorized": "Otros",
+  "help.no_description": "Sin descripción.",
+  "help.subcommands": "Subcomandos",
+  "help.none": "Ninguno",
+  "help.footer_specific": "Usa /help <comando> para más información de un comando específico",
+  "help.title_cmd": "Ayuda: {name}",
+  "help.command_not_found": "Comando `{command}` no encontrado."
+}

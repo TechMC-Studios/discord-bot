@@ -1,0 +1,4 @@
+polymart:
+  api_key: "${VERIFICATION_API_POLYMART_KEY}" # Global API key for Polymart (can be overridden per plugin)
+  timeout_seconds: 10 # Timeout for Polymart API requests
+  base: "https://api.polymart.org/v1"

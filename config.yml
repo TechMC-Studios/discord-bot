@@ -1,0 +1,21 @@
+# Configuración del bot de Discord
+# Ajusta estos valores según tu proyecto/entorno
+
+# Prefijo para comandos de texto (bridge)
+command_prefix: "!"
+
+# Nivel de logging: DEBUG, INFO, WARNING, ERROR, CRITICAL
+log_level: "INFO"
+
+# Lista de IDs de servidores (guilds) para registrar los slash commands de forma inmediata durante desarrollo.
+# Si se deja vacía o se quita, los comandos se registrarán globalmente (puede tardar hasta 1 hora en propagarse).
+# Ejemplo: [123456789012345678, 987654321098765432]
+guild_ids: [1165405918620557392]
+
+token: "${BOT_TOKEN}"
+
+# Feature toggles (enable/disable feature packages under features/)
+features:
+  health: true
+  tickets: false
+  verification: true

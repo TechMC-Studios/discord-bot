@@ -1,0 +1,13 @@
+plataforms:
+  spigot:
+    name: "SpigotMC"
+    emoji: "<:spigot:1254102039298965514>"
+    btn_color: "success"
+  polymart:
+    name: "Polymart"
+    emoji: "<:polymart:1254102772790333480>"
+    btn_color: "success"  
+  builtbybit:
+    name: "BuiltByBit"
+    emoji: "<:builtbybit:1254104107283644519>"
+    btn_color: "success"

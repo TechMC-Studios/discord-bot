@@ -1,0 +1,12 @@
+{
+  "forums.support.priority_tag.error": "Couldn't set priority tag. Make sure you're in a support thread and you have the required buyer role.",
+  "forums.support.priority_tag.error_not_thread": "This command must be used inside a support thread.",
+  "forums.support.priority_tag.error_wrong_channel": "This thread is not in the configured support forum.",
+  "forums.support.priority_tag.error_buyer_role_missing": "Buyer role is not configured or cannot be found in this server.",
+  "forums.support.priority_tag.error_not_buyer": "You don't have the buyer role required to set the priority tag.",
+  "forums.support.priority_tag.error_not_owner": "Only the thread owner can set the priority tag.",
+  "forums.support.priority_tag.error_tag_not_found": "Priority tag is not available in this forum.",
+  "forums.support.priority_tag.error_already_tagged": "This thread already has the priority tag.",
+  "forums.support.priority_tag.error_apply_failed": "Failed to apply the priority tag. Please try again later.",
+  "forums.support.priority_tag.success": "Priority tag applied successfully."
+}

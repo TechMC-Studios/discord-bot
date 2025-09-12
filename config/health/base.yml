@@ -1,0 +1,6 @@
+health:
+  embed_color: "#2ecc71"
+
+  stats:
+    include_memory: true
+    include_loadavg: true

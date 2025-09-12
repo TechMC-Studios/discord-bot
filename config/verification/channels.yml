@@ -1,0 +1,4 @@
+channels:
+  verification_channel: 1253138987539763211 # Channel where the verification thread is created
+  staff_role: 1165422374435430400 # Role to notify when a user requests assistance
+  staff_channel: 0 # Channel to notify staff when a user requests assistance

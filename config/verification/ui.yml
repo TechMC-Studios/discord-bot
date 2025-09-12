@@ -1,0 +1,20 @@
+verification:
+  ui:
+    ttl:
+      # Ephemeral error messages for small user mistakes
+      error_short: 10         # seconds (e.g., invalid id/url/name, generic error)
+      # Ephemeral errors that benefit from slightly longer reading time
+      error_medium: 15        # seconds (e.g., channel not found, API error details)
+      # Warnings that need more attention
+      warning: 20             # seconds (e.g., partial success, rate limits)
+      # Positive confirmations
+      success: 30             # seconds (e.g., verification success summary)
+
+      # Lifetimes for interactive panels edited in-place
+      panel_short: 120        # seconds (e.g., API down panels)
+      panel_default: 300      # seconds (e.g., verification method panels)
+      link_thread: 180        # seconds (e.g., notify staff / open thread link)
+
+      # Admin commands feedback
+      admin_error: 8          # seconds
+      admin_success: 5        # seconds

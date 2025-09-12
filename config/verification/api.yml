@@ -1,0 +1,6 @@
+verification:
+  api:
+    base_url: "${VERIFICATION_API_BASE_URL}"
+    timeout_seconds: 60
+    api_key: "${VERIFICATION_API_KEY}"
+    user_agent: "${VERIFICATION_API_USER_AGENT}"
