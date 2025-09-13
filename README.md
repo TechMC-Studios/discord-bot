@@ -46,16 +46,16 @@ You can use `${VAR}` placeholders in YAML. The container replaces them on startu
    ```
 
 ## Docker
-### Build image
+### Use the official image
 ```bash
-docker build -t techmc-discord-bot .
+docker pull ghcr.io/techmc-studios/discord-bot:latest
 ```
 
 ### Run with Docker (simple)
 ```bash
 docker run --rm \
   -v $(pwd)/config:/app/config \
-  techmc-discord-bot
+  ghcr.io/techmc-studios/discord-bot:latest
 ```
 Note: the bot reads the token from `config.yml`. If you use `${...}` placeholders in YAML, prefer Docker Compose with `.env` (below) so they are substituted automatically.
 
@@ -66,8 +66,7 @@ A small templating script replaces `${VAR}` variables in all `.yml/.yaml` files 
 ```yaml
 services:
   bot:
-    build: .
-    image: techmc-discord-bot:latest
+    image: ghcr.io/techmc-studios/discord-bot:latest
     container_name: techmc-discord-bot
     restart: unless-stopped
     env_file:
@@ -102,7 +101,7 @@ verification:
 
 ### Start
 ```bash
-docker compose up --build
+docker compose up -d
 ```
 On startup, `scripts/template-configs.sh` will replace `${VAR}` placeholders in all `.yml/.yaml` under `/app` and then execute `python run.py`.
 
@@ -120,8 +119,9 @@ A workflow in `.github/workflows/docker-image.yml`:
 
 Pulling a published image:
 ```bash
-docker pull ghcr.io/<owner>/<repo>:latest
-# or a specific version/tag
+docker pull ghcr.io/techmc-studios/discord-bot:latest
+# or a specific version/tag, e.g.
+# docker pull ghcr.io/techmc-studios/discord-bot:<tag>
 ```
 
 ## Directory structure (summary)

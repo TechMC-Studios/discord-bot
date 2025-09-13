@@ -6,6 +6,7 @@ import logging
 import os
 from pathlib import Path
 import contextlib
+import signal
 
 import discord
 from discord.ext import bridge
@@ -121,6 +122,19 @@ class TechMCBot(bridge.Bot):
 async def main():
     """Main entry point."""
     bot = TechMCBot()
+
+    # Register clean shutdown on SIGINT/SIGTERM so Discord disconnects immediately
+    try:
+        loop = asyncio.get_running_loop()
+        for sig in (signal.SIGINT, signal.SIGTERM):
+            try:
+                loop.add_signal_handler(sig, lambda s=sig: asyncio.create_task(bot.close()))
+            except NotImplementedError:
+                # Some platforms (e.g., Windows) may not support this
+                pass
+    except RuntimeError:
+        # Fallback if no running loop yet; not expected under asyncio.run
+        pass
 
     # Read token exclusively from config.yml
     token = str(config.get("token", "") or "").strip()
