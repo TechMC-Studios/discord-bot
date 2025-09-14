@@ -1614,23 +1614,6 @@ class SpigotVerifyView(discord.ui.View):
             pass
 
     @discord.ui.button(
-        label="By ID",
-        style=discord.ButtonStyle.success,
-        custom_id="spigot:btn:id",
-        emoji="#️⃣",
-        row=0,
-    )
-    async def by_id(self, button: discord.ui.Button, interaction: discord.Interaction):
-        # Open modal for ID input
-        await interaction.response.send_modal(SpigotIdModal(interaction))
-        try:
-            reschedule_delete_for_same_message(
-                interaction, delay_seconds=_ui_ttl("panel_default", 300)
-            )
-        except Exception:
-            pass
-
-    @discord.ui.button(
         label="By URL",
         style=discord.ButtonStyle.success,
         custom_id="spigot:btn:url",
@@ -1657,6 +1640,23 @@ class SpigotVerifyView(discord.ui.View):
         self, button: discord.ui.Button, interaction: discord.Interaction
     ):
         await interaction.response.send_modal(SpigotExactNameModal(interaction))
+        try:
+            reschedule_delete_for_same_message(
+                interaction, delay_seconds=_ui_ttl("panel_default", 300)
+            )
+        except Exception:
+            pass
+
+    @discord.ui.button(
+        label="By ID",
+        style=discord.ButtonStyle.success,
+        custom_id="spigot:btn:id",
+        emoji="#️⃣",
+        row=0,
+    )
+    async def by_id(self, button: discord.ui.Button, interaction: discord.Interaction):
+        # Open modal for ID input
+        await interaction.response.send_modal(SpigotIdModal(interaction))
         try:
             reschedule_delete_for_same_message(
                 interaction, delay_seconds=_ui_ttl("panel_default", 300)

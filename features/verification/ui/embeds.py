@@ -277,11 +277,7 @@ def spigot_verification_methods_embed(ctx: Any) -> discord.Embed:
         description=t(ctx, "verification.spigot.ui.desc"),
         color=discord.Color.magenta(),
     )
-    embed.add_field(
-        name=t(ctx, "verification.spigot.ui.method_id.title"),
-        value=t(ctx, "verification.spigot.ui.method_id.desc"),
-        inline=False,
-    )
+    # Order: URL, Exact, ID, Search
     embed.add_field(
         name=t(ctx, "verification.spigot.ui.method_url.title"),
         value=t(ctx, "verification.spigot.ui.method_url.desc"),
@@ -290,6 +286,11 @@ def spigot_verification_methods_embed(ctx: Any) -> discord.Embed:
     embed.add_field(
         name=t(ctx, "verification.spigot.ui.method_exact.title"),
         value=t(ctx, "verification.spigot.ui.method_exact.desc"),
+        inline=False,
+    )
+    embed.add_field(
+        name=t(ctx, "verification.spigot.ui.method_id.title"),
+        value=t(ctx, "verification.spigot.ui.method_id.desc"),
         inline=False,
     )
     embed.add_field(
